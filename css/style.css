@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6, figure {
           font-size: 50px; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
           padding: 15px 30px;
-          background: #1a475b !important;
+          background: #083544 !important;
           color: #fff;
           border: none !important;
           font-size: 18px; }
@@ -472,7 +472,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #colorlib-content .choose-form,
 #colorlib-consult .choose-form {
-  background: #1a475b; }
+  background: #083544; }
   #colorlib-content .choose-form .colorlib-heading,
   #colorlib-consult .choose-form .colorlib-heading {
     margin-bottom: 40px; }
@@ -497,7 +497,7 @@ h1, h2, h3, h4, h5, h6, figure {
       border-color: #d7b373; }
 
 .progress-bar {
-  background-color: #1a475b !important;
+  background-color: #083544 !important;
   font-size: 16px; }
 
 #colorlib-intro {
@@ -509,7 +509,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: -40px;
   z-index: 1;
   width: 50%;
-  background: #415f92;
+  background: #1a475b;
   color: #fff;
   position: relative;
   overflow: hidden; }
@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6, figure {
     color: #fff;
     font-weight: 700; }
   .third-col.third-col-color {
-    background: #1a475b; }
+    background: #083544; }
   .third-col .icon {
     position: absolute;
     top: 0px;
@@ -541,7 +541,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .services h3 {
     font-weight: 400; }
     .services h3 a {
-      color: #1a475b; }
+      color: #083544; }
   .services .icon {
     text-align: center;
     margin: 0 auto;
@@ -558,9 +558,9 @@ h1, h2, h3, h4, h5, h6, figure {
       height: 70px;
       font-size: 60px;
       line-height: 40px;
-      color: #1a475b; }
+      color: #083544; }
   .services:hover, .services:focus {
-    background: #1a475b;
+    background: #083544;
     color: rgba(255, 255, 255, 0.7); }
     .services:hover h3 a, .services:focus h3 a {
       color: #fff; }
@@ -701,7 +701,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #d7b373; }
 
 #colorlib-testimonial .owl-theme .owl-dots .owl-dot span {
-  background: #1a475b; }
+  background: #083544; }
 
 .colorlib-staff {
   text-align: center;
@@ -762,7 +762,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 30px; }
 
 .blog-featured h2 a {
-  color: #1a475b; }
+  color: #083544; }
   .blog-featured h2 a:hover {
     color: #d7b373; }
 
@@ -780,7 +780,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .blog-entry .desc {
     padding-left: 170px; }
     .blog-entry .desc h3 a {
-      color: #1a475b; }
+      color: #083544; }
       .blog-entry .desc h3 a:hover {
         color: #d7b373; }
     .blog-entry .desc .meta {
