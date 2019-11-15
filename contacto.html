@@ -134,7 +134,7 @@
 				<div class="col-md-6 animate-box">
 					<h3>¿Necesita factoring?</h3>
 					<p>Deje sus datos y nos pondremos en contacto con usted.</p>
-					<form  onclick="enviarForm()" onsubmit="return false">
+					<form  onsubmit="return false" >
 
 						<div class="row form-group">
 							<div class="col-md-12">
@@ -161,7 +161,7 @@
 						</div>
 
 						<div class="form-group">
-							<input id="botonEnviar" type="submit" value="Enviar mensaje" class="btn btn-primary">
+							<input id="botonEnviar" onclick="enviarForm()" type="submit" value="Enviar mensaje" class="btn btn-primary">
 						</div>
 
 					</form>		

@@ -12,8 +12,11 @@ function enviarForm()
             telefono = $("#telefono").val();
            razon = $("#razonsocial").val();
 
-            if (!nombre) //la función se llama sola al cargar la página con campos vacios
-                return;
+            if (!nombre || !email || !telefono || !razon) //la función se llama sola al cargar la página con campos vacios
+            {
+                return false;
+
+            }   
         //Desactiva el boton para que no se envie el form dos veces
         $("#botonEnviar").attr("disabled", true);
 
@@ -30,13 +33,14 @@ function enviarForm()
             success: function(res)
             {
                 alert("El formulario ha sido enviado exitosamente");
+                return true;
             },
             error: function(res)
             {
                 alert("Lo lamentamos mucho. Ha ocurrido un error");
                 console.log(res);
+                return true;
             }
         });
-        return;
 
 }
