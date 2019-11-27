@@ -208,11 +208,39 @@
 		$(".colorlib-loader").fadeOut("slow");
 	};
 
+	var formatMoney = function(amount) 
+	{
+		var dollars = Math.floor(amount).toString().split('');
+		var cents = (Math.round((amount%1)*100)/100).toString().split('.')[1];
+		if(typeof cents == 'undefined'){
+			cents = '00';
+		}else if(cents.length == 1){
+			cents = cents + '0';
+		}
+		var str = '';
+		for(var i=dollars.length-1; i>=0; i--)
+		{
+			str += dollars.splice(0,1);
+			if(i%3 == 0 && i != 0) str += '.';
+		}
+		// return '$' + str + '.' + cents;
+		return '$' + str ;
+	};
+
 	var counter = function() {
 		$('.js-counter').countTo({
-			 formatter: function (value, options) {
-	      return value.toFixed(options.decimals);
-	    },
+			 formatter: function (value, options) 
+			 {
+				var valorTemporal = value.toFixed(options.decimals);
+
+				// le añade el formato de moneda a la plata
+				if(valorTemporal>10000)
+				{
+					valorTemporal = formatMoney(valorTemporal);
+				}
+
+	     	 return valorTemporal;
+	    	},
 		});
 	};
 

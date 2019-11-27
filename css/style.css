@@ -73,6 +73,16 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   background: #d7b373; }
 
+/* Fija el menú a la parte de arriba */
+.colorlib-nav 
+{
+  position: fixed;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+}
+  
+
 .colorlib-nav .top-menu {
   padding: 28px 0; }
 
@@ -513,6 +523,14 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   position: relative;
   overflow: hidden; }
+
+  /* se cambia a una columna de ancho total */
+  .third-col.modificacionFullAncho
+   {
+   
+    width: 100%;
+   }
+
   @media screen and (max-width: 768px) {
     .third-col {
       width: 100% !important; } }
@@ -911,10 +929,13 @@ h1, h2, h3, h4, h5, h6, figure {
   #colorlib-offcanvas ul {
     padding: 0;
     margin: 0; }
+    /* aumentar el tamaño de la fuente y deja más espacio entre items */
     #colorlib-offcanvas ul li {
       padding: 0;
-      margin: 0;
-      list-style: none; }
+    margin: 0;
+    list-style: none;
+    font-size: 21px;
+    margin-top: 15px;}
       #colorlib-offcanvas ul li > ul {
         padding-left: 20px;
         display: none; }
@@ -1060,7 +1081,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #fff; }
 
 .colorlib-nav-toggle {
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 65px;
   z-index: 21;

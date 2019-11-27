@@ -1,12 +1,13 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 05/01/2018 02:43
+  	Creation date: 27/11/2019 20:17
   	*/
 
 @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
        url("./Flaticon.woff") format("woff"),
        url("./Flaticon.ttf") format("truetype"),
        url("./Flaticon.svg#Flaticon") format("svg");
@@ -24,20 +25,18 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-    /*font-size: 20px;*/
-    font-style: normal;
-    /*margin-left: 20px;*/
+        /* font-size: 20px; */
+font-style: normal;
+/* margin-left: 20px; */
 }
 
-.flaticon-police-badge:before { content: "\f100"; }
-.flaticon-jury:before { content: "\f101"; }
-.flaticon-lawyer-1:before { content: "\f102"; }
-.flaticon-siren:before { content: "\f103"; }
-.flaticon-lawyer:before { content: "\f104"; }
-.flaticon-policeman:before { content: "\f105"; }
-.flaticon-handcuffs:before { content: "\f106"; }
-.flaticon-padlock:before { content: "\f107"; }
-.flaticon-courthouse:before { content: "\f108"; }
-.flaticon-folder:before { content: "\f109"; }
-.flaticon-libra:before { content: "\f10a"; }
-.flaticon-act:before { content: "\f10b"; }
+.flaticon-whatsapp:before { content: "\f100"; }
+.flaticon-pin:before { content: "\f101"; }
+.flaticon-smartphone:before { content: "\f102"; }
+.flaticon-edit:before { content: "\f103"; }
+.flaticon-invoice:before { content: "\f104"; }
+.flaticon-fountain-pen:before { content: "\f105"; }
+.flaticon-handshake:before { content: "\f106"; }
+.flaticon-money:before { content: "\f107"; }
+.flaticon-target:before { content: "\f108"; }
+.flaticon-dollar-symbol:before { content: "\f109"; }
