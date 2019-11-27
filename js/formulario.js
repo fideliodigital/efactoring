@@ -7,10 +7,12 @@ function enviarForm()
 {
 
    
-        var nombre = $("#nombre").val(),
-            email = $("#email").val(),
-            telefono = $("#telefono").val();
-           razon = $("#razonsocial").val();
+    var nombre = $("#nombre").val();
+            var email = $("#email").val();
+            var telefono = $("#telefono").val();
+           var razon = $("#razonsocial").val();
+           var pagador = $("#pagador").val();
+           var NIT = $("#NIT").val();
 
             if (!nombre || !email || !telefono || !razon) //la función se llama sola al cargar la página con campos vacios
             {
@@ -28,6 +30,8 @@ function enviarForm()
                 'nombre': nombre,
                 'telefono': telefono,
                 'email': email,
+                'pagador': pagador,
+                'NIT': NIT,
                 'razon' : razon
             }),
             success: function(res)
