@@ -5,19 +5,39 @@
   font-weight: normal;
   font-style: normal; }
 
+
+  /* Fuentes customizadas */
+
+  @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+  /* font-family: 'Titillium Web', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+
+
+
 /* =======================================================
 *
 * 	Template Style 
 *
 * ======================================================= */
 body {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
   color: #828282;
   background: #fff; }
 
+  /* Arregla un problema con el logo entre estas dos resoluciones */
+  @media screen and (max-width: 1200px) and (min-width: 768px) 
+  {
+      #logoEfactoring
+      {
+        width: 150px !important;
+        margin-top: 8px;
+      }
+  }
+  
 #page {
   position: relative;
   overflow-x: hidden;
@@ -57,7 +77,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0; }
 
@@ -93,7 +113,7 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
   font-weight: bold;
   font-weight: 700;
-  font-family: "Playfair Display", Georgia, serif; }
+  font-family: 'Titillium Web', sans-serif; }
   .colorlib-nav #colorlib-logo a {
     color: #d7b373; }
     .colorlib-nav #colorlib-logo a span {
@@ -117,6 +137,8 @@ h1, h2, h3, h4, h5, h6, figure {
     display: inline;
     text-transform: uppercase; }
     .colorlib-nav ul li a {
+      /* cambia la fuente por la fuente de los titulos */
+      font-family: 'Titillium Web', sans-serif;
       font-size: 15px;
       padding: 30px 15px;
       color: rgba(0, 0, 0, 0.7);
@@ -420,7 +442,7 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 40px;
     display: block;
     color: white;
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: 'Titillium Web', sans-serif;
     width: 100%;
     font-weight: 700;
     margin-bottom: .3em; }
@@ -912,7 +934,11 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: translateX(270px);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  /* cambia la fuente por la fuente de los titulos */
+  font-family: 'Titillium Web', sans-serif;
+
+}
   @media screen and (max-width: 768px) {
     #colorlib-offcanvas {
       display: block; } }
@@ -1100,7 +1126,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
