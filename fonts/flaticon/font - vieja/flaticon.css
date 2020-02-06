@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 06/02/2020 21:05
+  	Creation date: 27/11/2019 20:17
   	*/
 
 @font-face {
@@ -40,14 +40,3 @@ font-style: normal;
 .flaticon-money:before { content: "\f107"; }
 .flaticon-target:before { content: "\f108"; }
 .flaticon-dollar-symbol:before { content: "\f109"; }
-.flaticon-economy:before { content: "\f10a"; }
-.flaticon-risk:before { content: "\f10b"; }
-.flaticon-risk-1:before { content: "\f10c"; }
-.flaticon-risk-2:before { content: "\f10d"; }
-.flaticon-pension:before { content: "\f10e"; }
-.flaticon-economy-1:before { content: "\f10f"; }
-.flaticon-claim:before { content: "\f110"; }
-.flaticon-portfolio:before { content: "\f111"; }
-.flaticon-money-1:before { content: "\f112"; }
-.flaticon-money-2:before { content: "\f113"; }
-.flaticon-graph:before { content: "\f114"; }

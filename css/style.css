@@ -122,8 +122,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .colorlib-nav a {
   padding: 5px 10px;
   color: #000; }
-
-@media screen and (max-width: 768px) {
+/* Cambiado para que no se dañara el esquemá gráfico en el punto de corte. El logo se montaba sobre el menú */
+/* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 992px) {
   .colorlib-nav .menu-1 {
     display: none; } }
 
@@ -1119,7 +1120,10 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 44px;
   z-index: 2001;
   border-bottom: none !important; }
-  @media screen and (max-width: 768px) {
+
+  /* Cambiado para que no se dañara el esquemá gráfico en el punto de corte. El logo se montaba sobre el menú */
+  /* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 992px) {
     .colorlib-nav-toggle {
       display: block; } }
 

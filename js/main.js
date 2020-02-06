@@ -224,7 +224,16 @@
 			if(i%3 == 0 && i != 0) str += '.';
 		}
 		// return '$' + str + '.' + cents;
-		return '$' + str ;
+		if(amount<30000) //se asegura de no añadirle el signo pesos al número de facturas descontadas
+		{
+
+			return str ;
+		}
+		else
+		{
+
+			return '$' + str ;
+		}
 	};
 
 	var counter = function() {
