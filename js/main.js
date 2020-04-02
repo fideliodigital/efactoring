@@ -210,6 +210,22 @@
 
 	var formatMoney = function(amount) 
 	{
+		var str = formatearCeros(amount);
+		// return '$' + str + '.' + cents;
+		if(amount<30000) //se asegura de no añadirle el signo pesos al número de facturas descontadas
+		{
+
+			return str ;
+		}
+		else
+		{
+
+			return '$' + str ;
+		}
+	};
+
+	var formatearCeros = function(amount)
+	{
 		var dollars = Math.floor(amount).toString().split('');
 		var cents = (Math.round((amount%1)*100)/100).toString().split('.')[1];
 		if(typeof cents == 'undefined'){
@@ -223,18 +239,9 @@
 			str += dollars.splice(0,1);
 			if(i%3 == 0 && i != 0) str += '.';
 		}
-		// return '$' + str + '.' + cents;
-		if(amount<30000) //se asegura de no añadirle el signo pesos al número de facturas descontadas
-		{
-
-			return str ;
-		}
-		else
-		{
-
-			return '$' + str ;
-		}
-	};
+		return str;
+		
+	}
 
 	var counter = function() {
 		$('.js-counter').countTo({
