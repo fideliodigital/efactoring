@@ -605,10 +605,12 @@
 			console.log("tasaMVaEA : " + tasaMVaEA);
 			console.log("tasaEAaDV : " + tasaEAaDV);
 
-			let valorPresente = - pv(tasaEAaDV,diasNegociados,0,valornetoFactura);
+			let valorPresente =  pv(tasaEAaDV,diasNegociados,0,valornetoFactura)*-1;
 			let valorNetoAPagar=  valorPresente -gastosDesembolso  ; 
 			// let valorNetoAPagar= pv(tasaEAaDV,diasNegociados,0,valornetoFactura); 
-
+			console.log("valorPresente : " + valorPresente);
+			console.log("valorNetoAPagar : " + valorNetoAPagar);
+			console.log("gastosDesembolso : " + gastosDesembolso);
 			$("#diasNegociados").val(diasNegociados);
 			$("#valorDescuento").val("$" + formatearCeros(valornetoFactura - valorNetoAPagar));
 			$("#valorDesembolso").val("$" + formatearCeros(valorPresente));
