@@ -176,7 +176,7 @@
 		/* pone el marcador del cero */
 		.range-wrap:before 
 		{
-			content: "0%";
+			content: "1.25%";
 			float: left;
 			color: #2c4B5D;
 			font-size: 12px;
@@ -244,11 +244,46 @@
 			margin-top: -1px;
 		}
 
+		.ocultarEnMovil
+		{
+			display: block;
+		}
+		.ocultarEnDesktop
+		{
+			display: none;
+		}
+
 		@media screen and (max-width: 768px)
 		{
 			.contenedorSlider 
 			{
 				padding: 28px 24px;
+			}
+
+			.ocultarEnMovil
+			{
+				display: none;
+			}
+			.ocultarEnDesktop
+			{
+				display: block;
+			}
+			.filaResultados
+			{
+				padding-left: 0;
+				border-top: 1px dashed black;
+			}
+			.filaInputs
+			{
+				padding-right: 0;
+				border: none;
+			}
+			.tituloResultadosMovil
+			{
+				color: #1A475B;
+				text-align: center;
+				margin-top: 45px;
+				text-decoration: underline;
 			}
 		}
 
@@ -312,10 +347,10 @@
 							<div class="col-md-6 text-center ">
 								<h3 style="color: #1A475B">Datos Requeridos</h3>
 							</div>
-							<div class="col-md-6 text-center hidden-sm x">
+							<div class="col-md-6 text-center ocultarEnMovil">
 								<h3 style="color: #AFAFAF;">Resultados</h3>
 							</div>
-							<div class="col-md-12 text-center ">
+							<div class="col-md-12 text-center ocultarEnMovil">
 								<span class="icon"><img src="images\IconosSimulador\Asset 6.png"></span>
 								<br><br><br>
 							</div>
@@ -339,7 +374,7 @@
 								<div class="simuladorsub">Corresponde al valor neto a pagar después de impuestos y retenciones confirmado por el pagador de la factura.</div>
 							</div>
 							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input style="text-align: left;" type="text" step="any" required="true" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"  name="valorneto" data-type="currency" placeholder="$1.000.000">
+								<input style="text-align: left;" type="text" step="any" required="true" pattern="^\$\d{1,3}(,\d{3})*(\,\d+)?$"  name="valorneto" data-type="currency" placeholder="$1.000.000">
 							</div>
 					</div>
 				</div>
@@ -353,7 +388,7 @@
 								<div class="simuladorsub">Corresponde a la fecha en que recibirá el dinero.</div>
 							</div>
 							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input type="date" name="fechaNegociacion" value="2020-01-01">
+								<input type="date" name="fechaNegociacion" value="">
 							</div>
 					</div>
 				</div>
@@ -367,7 +402,7 @@
 								<div class="simuladorsub">Corresponde a la fecha de pago confirmada por el pagador de la factura.</div>
 							</div>
 							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input type="date" name="fechaVencimiento" value="2020-03-07">
+								<input type="date" name="fechaVencimiento" value="">
 							</div>
 					</div>
 				</div>
@@ -383,7 +418,7 @@
 							<div class="col-md-4 col-xl-5 col-xs-12 text-center contenedorSlider">
 								<div class="range-wrap">
 									<div class="range-value" id="rangeVTasanominal"></div>
-									<input type="range" min="1.25" max="3" value="1.950" class="slider" id="tasanominal" step="0.025">
+									<input type="range" min="1.25" max="3" value="1.975" class="slider" id="tasanominal" step="0.025">
 								</div>
 							</div>
 					</div>
@@ -428,7 +463,10 @@
 <!-- Mitad derecha (resultados) -->
 		<div class="col-md-6 text-center ">		
 			<div class="row filaResultados">
-				
+				<div class="col-md-6 text-center ocultarEnDesktop">
+					<h3 class="tituloResultadosMovil">Resultados</h3>
+								<!-- <h3 style="color: #AFAFAF;">Resultados</h3> -->
+				</div>
 				
 				<div class="col-md-12 text-center ">
 					<div class="row filaSimulador">
@@ -565,7 +603,7 @@
 		{
 
 			
-			let valornetoFactura =  $("[name='valorneto']").val().replace("$","").replace(/,/g,"");
+			let valornetoFactura =  $("[name='valorneto']").val().replace("$","").replace(/\./g,"").replace(",",".");
 			let fechaNegociacion =  new Date($("[name='fechaNegociacion']").val());
 			let fechaVencimiento =  new Date($("[name='fechaVencimiento']").val());
 			let tasanominal =  $("#tasanominal").val()/100;
@@ -640,8 +678,9 @@
 		function limpiar()
 		{
 			$("[name='valorneto']").val("");
-			 new Date($("[name='fechaNegociacion']").val("2020-01-01"));
-			 new Date($("[name='fechaVencimiento']").val("2020-01-01"));
+			iniciarFechas();
+			//  new Date($("[name='fechaNegociacion']").val("2020-01-01"));
+			//  new Date($("[name='fechaVencimiento']").val("2020-01-01"));
 			  $("#tasanominal").val("1.95");
 			  $("#gastosDesembolso").val(250000);
 		}
@@ -666,6 +705,29 @@
 		return str;
 		
 	}
+	//-------------pone el valor inical del slider negociacion como hoy y el de vencimiento en  60 días
+
+
+
+
+function iniciarFechas() 
+{
+	console.log("onload")
+	var hoy = new Date();
+	var yyyymmdd = new Date(hoy.getTime() - (hoy.getTimezoneOffset() * 60000 ))
+                    .toISOString()
+					.split("T")[0];
+					
+	$("[name='fechaNegociacion']").val(yyyymmdd);
+
+	var dias60 = new Date(hoy.getTime() - (hoy.getTimezoneOffset() * 60000 ) + 60*24*3600*1000)
+                    .toISOString()
+					.split("T")[0];
+					
+	$("[name='fechaVencimiento']").val(dias60)
+}
+
+window.onload = iniciarFechas;
 
 	// ----para los sliders, que se muestre el número encima cuando se arraste----
 	//no estan dentro de ningun metodo (ni onload ni .ready) pq entonces no se muestran al cargar la página
@@ -679,8 +741,9 @@
 			{
 				let
 					newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
-					newPosition = 10 - (newValue * 0.2);
-				rangeV.innerHTML = `<span>${range.value}%</span>`;
+					newPosition = 10 - (newValue * 0.2)
+					valorSlider = Number(range.value).toFixed(3);
+				rangeV.innerHTML = `<span>${valorSlider}%</span>`;
 				rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
 			};
 		document.addEventListener("DOMContentLoaded", setValue);
@@ -720,7 +783,7 @@
 
 		function formatNumber(n) {
 		// format number 1000000 to 1,234,567
-		return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+		return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 		}
 
 
@@ -741,12 +804,12 @@
 		var caret_pos = input.prop("selectionStart");
 			
 		// check for decimal
-		if (input_val.indexOf(".") >= 0) {
+		if (input_val.indexOf(",") >= 0) {
 
 			// get position of first decimal
 			// this prevents multiple decimals from
 			// being entered
-			var decimal_pos = input_val.indexOf(".");
+			var decimal_pos = input_val.indexOf(",");
 
 			// split number by decimal point
 			var left_side = input_val.substring(0, decimal_pos);
@@ -767,7 +830,7 @@
 			right_side = right_side.substring(0, 2);
 
 			// join number by .
-			input_val = "$" + left_side + "." + right_side;
+			input_val = "$" + left_side + "," + right_side;
 
 		} else {
 			// no decimal entered
@@ -778,7 +841,7 @@
 			
 			// final formatting
 			if (blur === "blur") {
-			input_val += ".00";
+			input_val += ",00";
 			}
 		}
 		
