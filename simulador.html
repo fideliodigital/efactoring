@@ -244,11 +244,46 @@
 			margin-top: -1px;
 		}
 
+		.ocultarEnMovil
+		{
+			display: block;
+		}
+		.ocultarEnDesktop
+		{
+			display: none;
+		}
+
 		@media screen and (max-width: 768px)
 		{
 			.contenedorSlider 
 			{
 				padding: 28px 24px;
+			}
+
+			.ocultarEnMovil
+			{
+				display: none;
+			}
+			.ocultarEnDesktop
+			{
+				display: block;
+			}
+			.filaResultados
+			{
+				padding-left: 0;
+				border-top: 1px dashed black;
+			}
+			.filaInputs
+			{
+				padding-right: 0;
+				border: none;
+			}
+			.tituloResultadosMovil
+			{
+				color: #1A475B;
+				text-align: center;
+				margin-top: 45px;
+				text-decoration: underline;
 			}
 		}
 
@@ -312,10 +347,10 @@
 							<div class="col-md-6 text-center ">
 								<h3 style="color: #1A475B">Datos Requeridos</h3>
 							</div>
-							<div class="col-md-6 text-center hidden-sm x">
+							<div class="col-md-6 text-center ocultarEnMovil">
 								<h3 style="color: #AFAFAF;">Resultados</h3>
 							</div>
-							<div class="col-md-12 text-center ">
+							<div class="col-md-12 text-center ocultarEnMovil">
 								<span class="icon"><img src="images\IconosSimulador\Asset 6.png"></span>
 								<br><br><br>
 							</div>
@@ -383,7 +418,7 @@
 							<div class="col-md-4 col-xl-5 col-xs-12 text-center contenedorSlider">
 								<div class="range-wrap">
 									<div class="range-value" id="rangeVTasanominal"></div>
-									<input type="range" min="1.25" max="3" value="1.950" class="slider" id="tasanominal" step="0.025">
+									<input type="range" min="1.25" max="3" value="1.975" class="slider" id="tasanominal" step="0.025">
 								</div>
 							</div>
 					</div>
@@ -428,7 +463,10 @@
 <!-- Mitad derecha (resultados) -->
 		<div class="col-md-6 text-center ">		
 			<div class="row filaResultados">
-				
+				<div class="col-md-6 text-center ocultarEnDesktop">
+					<h3 class="tituloResultadosMovil">Resultados</h3>
+								<!-- <h3 style="color: #AFAFAF;">Resultados</h3> -->
+				</div>
 				
 				<div class="col-md-12 text-center ">
 					<div class="row filaSimulador">
