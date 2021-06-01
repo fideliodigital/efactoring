@@ -1,863 +1,857 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149325306-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-149325306-1');
-  </script>
-  
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>eFactoring - Factoring en Colombia</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<head>
 
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149325306-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        gtag('config', 'UA-149325306-1');
+    </script>
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Widget JivoChat -->
+    <script src="//code.jivosite.com/widget/cS0whQV81p" async></script>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>eFactoring - Factoring en Colombia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-
-	<style>
-
-		/* Centra el icono y el input en la fila */
-		.icon img, .filaSimulador input , .ajusteTitulo
-		{
-			margin-top: 10px;
-		}
-		/* Centra el icono y el input en la fila derecha*/
-		.filaResultados .simuladorTitulo
-		{
-			margin-top: 15px;
-		}
-		/* Evita que se salga de la columna */
-		.filaSimulador input 
-		{
-			width: inherit;
-			width: -webkit-fill-available;
-		}
-		
-		
-		.simuladorsub
-		{
-			font-size: 9px;
-			text-align: left;
-			color: #8A8A8A;
-		}
-		.simuladorTitulo
-		{
-			font-size: 16px;
-			color: #565656;
-			white-space: nowrap;
-		}
-
-		.filaSimulador
-		{
-			text-align: left;
-			/* background-color: #F0F0F0; */
-			vertical-align: middle;
-			padding: 12px 0;
-			
-		}
-
-		.filaInputs
-		{
-			padding-right: 15px;
-			border-right: 0.5px solid black;
-		}
-
-		.filaResultados
-		{
-			padding-left: 15px;
-		}
-
-		.filaInputs .col-md-12:nth-child(2n+1), .filaResultados .col-md-12:nth-child(2n+1)
-		{
-			background-color: #F0F0F0;
-		}
-		
-		.filaInputs .col-md-12:nth-child(2n), .filaResultados .col-md-12:nth-child(2n)
-		{
-			background-color: WHITE;
-		}
-
-		input[type="text"]
-		{
-			text-align: right;
-			padding-right: 10px;
-		}
-
-		/* Los sliders del simulador */
-		.contenedorSlider
-		{
-			min-height: 50px;
-			padding: 0 10px;
-			margin: 0;
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		input[type=range] {
-			-webkit-appearance: none;
-			margin: 20px 0;
-			width: 100%;
-		}
-		input[type=range]:focus {
-			outline: none;
-		}
-		input[type=range]::-webkit-slider-runnable-track {
-			width: 100%;
-			height: 4px;
-			cursor: pointer;
-			animate: 0.2s;
-			background: #2C4B5D;
-			border-radius: 25px;
-		}
-		input[type=range]::-webkit-slider-thumb {
-			height: 20px;
-			width: 20px;
-			border-radius: 50%;
-			background: #fff;
-			box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
-			cursor: pointer;
-			-webkit-appearance: none;
-			margin-top: -8px;
-		}
-		input[type=range]:focus::-webkit-slider-runnable-track {
-			background: #2C4B5D;
-		}
-		/* pone el marcador del cero */
-		.range-wrap:before 
-		{
-			content: "1.25%";
-			float: left;
-			color: #2c4B5D;
-			font-size: 12px;
-			margin-left: 0px;
-   			 margin-top: -13px;
-		}
-
-		.gastos .range-wrap:before 
-		{
-			content: "$0";
-		}
-		/* marcador del límite superior */
-		.contenedorSlider:after {
-			content: "3%";
-			position: absolute;
-    		right: 0;
-			color: #2c4B5D;
-			font-size: 12px;
-			margin-right: 5px;
-   			 margin-top: -24px;
-		}
-		/* marcador del límite superior */
-		.contenedorSlider.gastos:after {
-			content: "$600.000";
-			
-		}
-		.range-wrap{
-			width: 500px;
-			position: relative;
-		}
-		.range-value{
-			position: absolute;
-			top: -30%;
-			z-index: 5;
-		}
-		.range-value span{
-			width: 42px;
-			height: 20px;
-			line-height: 20px;
-			text-align: center;
-			background: #2C4B5D;
-			color: #fff;
-			font-size: 12px;
-			display: block;
-			position: absolute;
-			left: 50%;
-			transform: translate(-50%, 0);
-			border-radius: 6px;
-		}
-		#rangeVGastosDesembolso.range-value span
-		{
-			width: 60px;
-		}
-		.range-value span:before{
-			content: "";
-			position: absolute;
-			width: 0;
-			height: 0;
-			border-top: 6px solid #2C4B5D;
-			border-left: 5px solid transparent;
-			border-right: 5px solid transparent;
-			top: 100%;
-			left: 50%;
-			margin-left: -5px;
-			margin-top: -1px;
-		}
-
-		.ocultarEnMovil
-		{
-			display: block;
-		}
-		.ocultarEnDesktop
-		{
-			display: none;
-		}
-
-		@media screen and (max-width: 768px)
-		{
-			.contenedorSlider 
-			{
-				padding: 28px 24px;
-			}
-
-			.ocultarEnMovil
-			{
-				display: none;
-			}
-			.ocultarEnDesktop
-			{
-				display: block;
-			}
-			.filaResultados
-			{
-				padding-left: 0;
-				border-top: 1px dashed black;
-			}
-			.filaInputs
-			{
-				padding-right: 0;
-				border: none;
-			}
-			.tituloResultadosMovil
-			{
-				color: #1A475B;
-				text-align: center;
-				margin-top: 45px;
-				text-decoration: underline;
-			}
-		}
-
-	</style>
-
-
-	<body>
-		
-	<div class="colorlib-loader"></div>
-	
-	<div id="page">
-  <!-- Barra navegadora -->
-	<nav class="colorlib-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2">
-					  <div>
-					    <a href="index.html">
-					    <img src="images/EFactoring_logo 2019.png" alt="eFactoring" style="width:220px;height:100%;">
-					    </a>
-					  </div>
-					</div>
-					<div class="col-md-10 text-right menu-1">
-						<ul>
-							<li><a href="factoring.html">Qué es factoring</a></li>
-							<li><a href="efactoring.html">Por qué eFactoring</a></li>
-							<li class="btn-cta"><a href="vinculacion.html"><span>Vincúlese</span></a></li>
-							<!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
-
-	<aside id="colorlib-hero" class="js-fullheight">
-		<div class="flexslider js-fullheight">
-			<ul class="slides">
-		   	<li style="background-image: url(images/E-Factoring-simulador-header.jpg);">
-		   		<div class="overlay-gradient"></div>
-		   		<div class="container">
-		   			<div class="col-md-10 col-md-offset-1 text-center  slider-text">
-		   				<div class="slider-text-inner desc">
-		   				  <br><br><br>
-		   					<h2 class="heading-section"><br><br>Simulador de eFactoring</h2>
-		   				</div>
-		   			</div>
-		   		</div>
-		   	</li>
-		  	</ul>
-	  	</div>
-	</aside>
-	
-	<div id="colorlib-practice">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center ">
-					<div class="row">
-							<div class="col-md-6 text-center ">
-								<h3 style="color: #1A475B">Datos Requeridos</h3>
-							</div>
-							<div class="col-md-6 text-center ocultarEnMovil">
-								<h3 style="color: #AFAFAF;">Resultados</h3>
-							</div>
-							<div class="col-md-12 text-center ocultarEnMovil">
-								<span class="icon"><img src="images\IconosSimulador\Asset 6.png"></span>
-								<br><br><br>
-							</div>
-					</div>
-				</div>
-			</div>
-
-<!-- Mitad Izquierda (input) -->
-
-	<div class="row">
-		<div class="col-md-6 text-center ">		
-			<div class="row filaInputs">
-			
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 1.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo" >Valor neto a pagar de la factura:</div>
-								<div class="simuladorsub">Corresponde al valor neto a pagar después de impuestos y retenciones confirmado por el pagador de la factura.</div>
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input style="text-align: left;" type="text" step="any" required="true" pattern="^\$\d{1,3}(,\d{3})*(\,\d+)?$"  name="valorneto" data-type="currency" placeholder="$1.000.000">
-							</div>
-					</div>
-				</div>
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 2.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo" >Fecha de Negociación:</div>
-								<div class="simuladorsub">Corresponde a la fecha en que recibirá el dinero.</div>
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input type="date" name="fechaNegociacion" value="">
-							</div>
-					</div>
-				</div>
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 3.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo" >Fecha de Vencimiento:</div>
-								<div class="simuladorsub">Corresponde a la fecha de pago confirmada por el pagador de la factura.</div>
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input type="date" name="fechaVencimiento" value="">
-							</div>
-					</div>
-				</div>
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 4.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo" >Tasa de descuento nominal:</div>
-								<div class="simuladorsub">Corresponde a la tasa nominal mes vencida del cupo aprobado por E-Factoring.</div>
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center contenedorSlider">
-								<div class="range-wrap">
-									<div class="range-value" id="rangeVTasanominal"></div>
-									<input type="range" min="1.25" max="3" value="1.975" class="slider" id="tasanominal" step="0.025">
-								</div>
-							</div>
-					</div>
-				</div>
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 5.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo ajusteTitulo">Gastos de desembolso:</div>
-								<div class="simuladorsub">Corresponde a un único gasto por grupo de facturas</div>
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center gastos contenedorSlider">
-								<div class="range-wrap">
-									<div class="range-value" id="rangeVGastosDesembolso"></div>
-									<input type="range" min="0" max="600000" value="250000" class="slider" id="gastosDesembolso" step="5000">
-								  </div>
-							</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6  col-xs-12">
-						<br>
-						<div class="text-center animate-box">
-							<p><a class="btn btn-primary btn-lg btn-learn" onclick="calcularNeto()" >Calcular</a></p>
-						</div>
-
-					</div>
-					<div class="col-md-6  col-xs-12">
-						<br>
-						<div class="text-center animate-box">
-							<p><a style="background-color: #21485A"  class="btn btn-primary btn-lg btn-learn" onclick="limpiar()" >Limpiar</a></p>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-<!-- Mitad derecha (resultados) -->
-		<div class="col-md-6 text-center ">		
-			<div class="row filaResultados">
-				<div class="col-md-6 text-center ocultarEnDesktop">
-					<h3 class="tituloResultadosMovil">Resultados</h3>
-								<!-- <h3 style="color: #AFAFAF;">Resultados</h3> -->
-				</div>
-				
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 2.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo" >Días negociados:</div>
-								<div class="simuladorsub">Días calendario entre la fecha de negociación y la fecha de vencimiento.</div>
-
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input type="text" id="diasNegociados" disabled="true">
-							</div>
-					</div>
-				</div>
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 1.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo" >Valor del descuento:</div>
-								<div class="simuladorsub">Incluye gastos de desembolso</div>
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input type="text" id="valorDescuento" disabled="true">
-							</div>
-					</div>
-				</div>
-				<div class="col-md-12 text-center ">
-					<div class="row filaSimulador">
-							<div class="col-md-1 col-xs-2 text-center ">
-								<span class="icon"><img src="images\IconosSimulador\Asset 5.png"></span>
-							</div>
-							<div class="col-md-7 col-xl-6 col-xs-10">
-								<div class="simuladorTitulo" >Valor neto a recibir:</div>
-								<div class="simuladorsub"></div>
-							</div>
-							<div class="col-md-4 col-xl-5 col-xs-12 text-center ">
-								<input type="text" id="arecibir"  disabled="true">
-							</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-			
-
-		</div>
-	</div>
-
-	
-  <!-- Footer -->
-	<footer id="colorlib-footer" role="contentinfo">
-		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-3 colorlib-widget">
-					<h4>Preguntas frecuentes</h4>
-					<ul class="colorlib-footer-links">
-						<li><a href="vinculacion.html">¿Cómo vincularme?</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h4>Contacto</h4>
-					<ul class="colorlib-footer-links">
-						<li><a href="https://wa.me/573187161655?text=Hola.%20Me%20gustaría%20saber%20más%20sobre%20eFactoring" target="_blank"><img src="images/001-whatsapp.svg" height="16px" style="display:inline-block;">&nbsp;Whatsapp</a></li>
-						<li><a href="https://goo.gl/maps/x6AiB2Fh87ek1o526" target="_blank"><img src="images/002-pin.svg" height="16px" style="display:inline-block;">&nbsp;Calle 70 #7-60 Of. 401</a></li>
-						<li><a href="tel:573187161655" target="_blank"><img src="images/003-smartphone.svg" height="16px" style="display:inline-block;">&nbsp;(57) 318 7161655</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-3">
-					<h4>Redes sociales</h4>
-					<ul class="colorlib-footer-links">
-						<li><i class="icon-linkedin" style="color: #d7b373;"></i><a href="https://www.linkedin.com/company/efactoring"> efactoring</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-3">
-					<h4>Información legal</h4>
-					<ul class="colorlib-footer-links">
-						<li><a href="docs/TratamientoDeDatos.pdf">Política de tratamiento de datos</a></li>
-						<li><a href="docs/ManejoInformación.pdf">Política de manejo de la información</a></li>
-					</ul>
-				</div>
-
-			</div>
-
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-					<small class="block">&copy; 2020 eFactoring. Todos los derechos reservados</small> 
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-	<script>
-
-		const undia = 1000 * 60 * 60 * 24;
-
-		function calcularNeto()
-		{
-
-			
-			let valornetoFactura =  $("[name='valorneto']").val().replace("$","").replace(/\./g,"").replace(",",".");
-			let fechaNegociacion =  new Date($("[name='fechaNegociacion']").val());
-			let fechaVencimiento =  new Date($("[name='fechaVencimiento']").val());
-			let tasanominal =  $("#tasanominal").val()/100;
-			let gastosDesembolso =  $("#gastosDesembolso").val();
-
-			if(valornetoFactura == "")
-			{
-				alert("El valor neto a pagar debe ser mayor a $0")
-				return;
-			}
-
-			let diasNegociados = Math.round(Math.abs((fechaNegociacion - fechaVencimiento) / undia))
-
-			let tasaMVaEA = Math.pow((1+tasanominal),12)-1
-
-			let tasaEAaDV = Math.pow((1+tasaMVaEA),(1/365))-1
-
-			console.log("valornetoFactura : " + valornetoFactura);
-			console.log("diasNegociados : " + diasNegociados);
-			console.log("tasaMVaEA : " + tasaMVaEA);
-			console.log("tasaEAaDV : " + tasaEAaDV);
-
-			let valorPresente =  pv(tasaEAaDV,diasNegociados,0,valornetoFactura)*-1;
-			let valorNetoAPagar=  valorPresente -gastosDesembolso  ; 
-			// let valorNetoAPagar= pv(tasaEAaDV,diasNegociados,0,valornetoFactura); 
-			console.log("valorPresente : " + valorPresente);
-			console.log("valorNetoAPagar : " + valorNetoAPagar);
-			console.log("gastosDesembolso : " + gastosDesembolso);
-			$("#diasNegociados").val(diasNegociados);
-			$("#valorDescuento").val("$" + formatearCeros(valornetoFactura - valorNetoAPagar));
-			$("#valorDesembolso").val("$" + formatearCeros(valorPresente));
-			$("#arecibir").val("$" + formatearCeros(valorNetoAPagar));
-		}
-
-
-		// Parameters are rate, total number of periods, payment made each period and future value
-		function pv(rate, nper, pmt, fv) {
-		rate = parseFloat(rate);
-		nper = parseFloat(nper);
-		pmt = parseFloat(pmt);
-		fv = parseFloat(fv);
-		if ( nper == 0 ) {
-			alert("La fecha de Vencimiento debe al menos un día mayor al la fecha de negociación ");
-			return(0);       
-		}
-		if ( rate == 0 ) { // Interest rate is 0
-			pv_value = -(fv + (pmt * nper));
-		} else {
-			x = Math.pow(1 + rate, -nper); 
-			y = Math.pow(1 + rate, nper);
-			pv_value = - ( x * ( fv * rate - pmt + y * pmt )) / rate;
-		}
-		pv_value = conv_number(pv_value,2);
-		return (pv_value);
-		}
-
-		// This function is from David Goodman's Javascript Bible.
-		function conv_number(expr, decplaces) {
-		var str = "" + Math.round(eval(expr) * Math.pow(10,decplaces));
-		while (str.length <= decplaces) {
-			str = "0" + str;
-		}
-
-		var decpoint = str.length - decplaces;
-		return (str.substring(0,decpoint) + "." + str.substring(decpoint,str.length));
-		}
-
-		
-
-
-		// Devulve a cero el campo de valor neto Factura y los de fecha
-		function limpiar()
-		{
-			$("[name='valorneto']").val("");
-			iniciarFechas();
-			//  new Date($("[name='fechaNegociacion']").val("2020-01-01"));
-			//  new Date($("[name='fechaVencimiento']").val("2020-01-01"));
-			  $("#tasanominal").val("1.95");
-			  $("#gastosDesembolso").val(250000);
-		}
-
-
-	//formatea un número como moneda
- 	function  formatearCeros (amount)
-	{
-		var dollars = Math.floor(amount).toString().split('');
-		var cents = (Math.round((amount%1)*100)/100).toString().split('.')[1];
-		if(typeof cents == 'undefined'){
-			cents = '00';
-		}else if(cents.length == 1){
-			cents = cents + '0';
-		}
-		var str = '';
-		for(var i=dollars.length-1; i>=0; i--)
-		{
-			str += dollars.splice(0,1);
-			if(i%3 == 0 && i != 0) str += '.';
-		}
-		return str;
-		
-	}
-	//-------------pone el valor inical del slider negociacion como hoy y el de vencimiento en  60 días
-
-
-
-
-function iniciarFechas() 
-{
-	console.log("onload")
-	var hoy = new Date();
-	var yyyymmdd = new Date(hoy.getTime() - (hoy.getTimezoneOffset() * 60000 ))
-                    .toISOString()
-					.split("T")[0];
-					
-	$("[name='fechaNegociacion']").val(yyyymmdd);
-
-	var dias60 = new Date(hoy.getTime() - (hoy.getTimezoneOffset() * 60000 ) + 60*24*3600*1000)
-                    .toISOString()
-					.split("T")[0];
-					
-	$("[name='fechaVencimiento']").val(dias60)
-}
-
-window.onload = iniciarFechas;
-
-	// ----para los sliders, que se muestre el número encima cuando se arraste----
-	//no estan dentro de ningun metodo (ni onload ni .ready) pq entonces no se muestran al cargar la página
-	{
-		
-	// slider 1
-		const
-			range = document.getElementById('tasanominal'),
-			rangeV = document.getElementById('rangeVTasanominal'),
-			setValue = ()=>
-			{
-				let
-					newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
-					newPosition = 10 - (newValue * 0.2)
-					valorSlider = Number(range.value).toFixed(3);
-				rangeV.innerHTML = `<span>${valorSlider}%</span>`;
-				rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-			};
-		document.addEventListener("DOMContentLoaded", setValue);
-		range.addEventListener('input', setValue);
-
-		
-		//slider 2
-		
-		const
-			range2 = document.getElementById('gastosDesembolso'),
-			rangeV2 = document.getElementById('rangeVGastosDesembolso'),
-			 setValue2 = ()=>{
-				let
-					newValue = Number( (range2.value - range2.min) * 100 / (range2.max - range2.min) ),
-					newPosition = 10 - (newValue * 0.2);
-				rangeV2.innerHTML = `<span>$${formatearCeros(range2.value)}</span>`;
-				rangeV2.style.left = `calc(${newValue}% + (${newPosition}px))`;
-			};
-		document.addEventListener("DOMContentLoaded", setValue2);
-		range2.addEventListener('input', setValue2);
-
-		}
-	
-	//------para que el campo de valor neto se formatee como moneda-----
-
-			// Jquery Dependency
-
-		$("input[data-type='currency']").on({
-			keyup: function() {
-			formatCurrency($(this));
-			},
-			blur: function() { 
-			formatCurrency($(this), "blur");
-			}
-		});
-
-
-		function formatNumber(n) {
-		// format number 1000000 to 1,234,567
-		return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-		}
-
-
-		function formatCurrency(input, blur) {
-		// appends $ to value, validates decimal side
-		// and puts cursor back in right position.
-		
-		// get input value
-		var input_val = input.val();
-		
-		// don't validate empty input
-		if (input_val === "") { return; }
-		
-		// original length
-		var original_len = input_val.length;
-
-		// initial caret position 
-		var caret_pos = input.prop("selectionStart");
-			
-		// check for decimal
-		if (input_val.indexOf(",") >= 0) {
-
-			// get position of first decimal
-			// this prevents multiple decimals from
-			// being entered
-			var decimal_pos = input_val.indexOf(",");
-
-			// split number by decimal point
-			var left_side = input_val.substring(0, decimal_pos);
-			var right_side = input_val.substring(decimal_pos);
-
-			// add commas to left side of number
-			left_side = formatNumber(left_side);
-
-			// validate right side
-			right_side = formatNumber(right_side);
-			
-			// On blur make sure 2 numbers after decimal
-			if (blur === "blur") {
-			right_side += "00";
-			}
-			
-			// Limit decimal to only 2 digits
-			right_side = right_side.substring(0, 2);
-
-			// join number by .
-			input_val = "$" + left_side + "," + right_side;
-
-		} else {
-			// no decimal entered
-			// add commas to number
-			// remove all non-digits
-			input_val = formatNumber(input_val);
-			input_val = "$" + input_val;
-			
-			// final formatting
-			if (blur === "blur") {
-			input_val += ",00";
-			}
-		}
-		
-		// send updated string to input
-		input.val(input_val);
-
-		// put caret back in the right position
-		var updated_len = input_val.length;
-		caret_pos = updated_len - original_len + caret_pos;
-		input[0].setSelectionRange(caret_pos, caret_pos);
-		}
-
-
-
-	
-	</script>
-	</body>
+</head>
+
+<style>
+    /* Centra el icono y el input en la fila */
+    
+    .icon img,
+    .filaSimulador input,
+    .ajusteTitulo {
+        margin-top: 10px;
+    }
+    /* Centra el icono y el input en la fila derecha*/
+    
+    .filaResultados .simuladorTitulo {
+        margin-top: 15px;
+    }
+    /* Evita que se salga de la columna */
+    
+    .filaSimulador input {
+        width: inherit;
+        width: -webkit-fill-available;
+    }
+    
+    .simuladorsub {
+        font-size: 9px;
+        text-align: left;
+        color: #8A8A8A;
+    }
+    
+    .simuladorTitulo {
+        font-size: 16px;
+        color: #565656;
+        white-space: nowrap;
+    }
+    
+    .filaSimulador {
+        text-align: left;
+        /* background-color: #F0F0F0; */
+        vertical-align: middle;
+        padding: 12px 0;
+    }
+    
+    .filaInputs {
+        padding-right: 15px;
+        border-right: 0.5px solid black;
+    }
+    
+    .filaResultados {
+        padding-left: 15px;
+    }
+    
+    .filaInputs .col-md-12:nth-child(2n+1),
+    .filaResultados .col-md-12:nth-child(2n+1) {
+        background-color: #F0F0F0;
+    }
+    
+    .filaInputs .col-md-12:nth-child(2n),
+    .filaResultados .col-md-12:nth-child(2n) {
+        background-color: WHITE;
+    }
+    
+    input[type="text"] {
+        text-align: right;
+        padding-right: 10px;
+    }
+    /* Los sliders del simulador */
+    
+    .contenedorSlider {
+        min-height: 50px;
+        padding: 0 10px;
+        margin: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input[type=range] {
+        -webkit-appearance: none;
+        margin: 20px 0;
+        width: 100%;
+    }
+    
+    input[type=range]:focus {
+        outline: none;
+    }
+    
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #2C4B5D;
+        border-radius: 25px;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 1);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -8px;
+    }
+    
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #2C4B5D;
+    }
+    /* pone el marcador del cero */
+    
+    .range-wrap:before {
+        content: "1.25%";
+        float: left;
+        color: #2c4B5D;
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: -13px;
+    }
+    
+    .gastos .range-wrap:before {
+        content: "$0";
+    }
+    /* marcador del límite superior */
+    
+    .contenedorSlider:after {
+        content: "3%";
+        position: absolute;
+        right: 0;
+        color: #2c4B5D;
+        font-size: 12px;
+        margin-right: 5px;
+        margin-top: -24px;
+    }
+    /* marcador del límite superior */
+    
+    .contenedorSlider.gastos:after {
+        content: "$600.000";
+    }
+    
+    .range-wrap {
+        width: 500px;
+        position: relative;
+    }
+    
+    .range-value {
+        position: absolute;
+        top: -30%;
+        z-index: 5;
+    }
+    
+    .range-value span {
+        width: 42px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        background: #2C4B5D;
+        color: #fff;
+        font-size: 12px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 6px;
+    }
+    
+    #rangeVGastosDesembolso.range-value span {
+        width: 60px;
+    }
+    
+    .range-value span:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 6px solid #2C4B5D;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: -1px;
+    }
+    
+    .ocultarEnMovil {
+        display: block;
+    }
+    
+    .ocultarEnDesktop {
+        display: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .contenedorSlider {
+            padding: 28px 24px;
+        }
+        .ocultarEnMovil {
+            display: none;
+        }
+        .ocultarEnDesktop {
+            display: block;
+        }
+        .filaResultados {
+            padding-left: 0;
+            border-top: 1px dashed black;
+        }
+        .filaInputs {
+            padding-right: 0;
+            border: none;
+        }
+        .tituloResultadosMovil {
+            color: #1A475B;
+            text-align: center;
+            margin-top: 45px;
+            text-decoration: underline;
+        }
+    }
+</style>
+
+
+<body>
+
+    <div class="colorlib-loader"></div>
+
+    <div id="page">
+        <!-- Barra navegadora -->
+        <nav class="colorlib-nav" role="navigation">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div>
+                                <a href="index.html">
+                                    <img src="images/EFactoring_logo 2019.png" alt="eFactoring" style="width:220px;height:100%;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 text-right menu-1">
+                            <ul>
+                                <li><a href="factoring.html">Qué es factoring</a></li>
+                                <li><a href="efactoring.html">Por qué eFactoring</a></li>
+                                <li class="btn-cta"><a href="vinculacion.html"><span>Vincúlese</span></a></li>
+                                <!-- <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <aside id="colorlib-hero" class="js-fullheight">
+            <div class="flexslider js-fullheight">
+                <ul class="slides">
+                    <li style="background-image: url(images/E-Factoring-simulador-header.jpg);">
+                        <div class="overlay-gradient"></div>
+                        <div class="container">
+                            <div class="col-md-10 col-md-offset-1 text-center  slider-text">
+                                <div class="slider-text-inner desc">
+                                    <br><br><br>
+                                    <h2 class="heading-section"><br><br>Simulador de eFactoring</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div id="colorlib-practice">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center ">
+                        <div class="row">
+                            <div class="col-md-6 text-center ">
+                                <h3 style="color: #1A475B">Datos Requeridos</h3>
+                            </div>
+                            <div class="col-md-6 text-center ocultarEnMovil">
+                                <h3 style="color: #AFAFAF;">Resultados</h3>
+                            </div>
+                            <div class="col-md-12 text-center ocultarEnMovil">
+                                <span class="icon"><img src="images\IconosSimulador\Asset 6.png"></span>
+                                <br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mitad Izquierda (input) -->
+
+                <div class="row">
+                    <div class="col-md-6 text-center ">
+                        <div class="row filaInputs">
+
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 1.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo">Valor neto a pagar de la factura:</div>
+                                        <div class="simuladorsub">Corresponde al valor neto a pagar después de impuestos y retenciones confirmado por el pagador de la factura.</div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center ">
+                                        <input style="text-align: left;" type="text" step="any" required="true" pattern="^\$\d{1,3}(,\d{3})*(\,\d+)?$" name="valorneto" data-type="currency" placeholder="$1.000.000">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 2.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo">Fecha de Negociación:</div>
+                                        <div class="simuladorsub">Corresponde a la fecha en que recibirá el dinero.</div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center ">
+                                        <input type="date" name="fechaNegociacion" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 3.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo">Fecha de Vencimiento:</div>
+                                        <div class="simuladorsub">Corresponde a la fecha de pago confirmada por el pagador de la factura.</div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center ">
+                                        <input type="date" name="fechaVencimiento" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 4.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo">Tasa de descuento nominal:</div>
+                                        <div class="simuladorsub">Corresponde a la tasa nominal mes vencida del cupo aprobado por E-Factoring.</div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center contenedorSlider">
+                                        <div class="range-wrap">
+                                            <div class="range-value" id="rangeVTasanominal"></div>
+                                            <input type="range" min="1.25" max="3" value="1.975" class="slider" id="tasanominal" step="0.025">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 5.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo ajusteTitulo">Gastos de desembolso:</div>
+                                        <div class="simuladorsub">Corresponde a un único gasto por grupo de facturas</div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center gastos contenedorSlider">
+                                        <div class="range-wrap">
+                                            <div class="range-value" id="rangeVGastosDesembolso"></div>
+                                            <input type="range" min="0" max="600000" value="250000" class="slider" id="gastosDesembolso" step="5000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6  col-xs-12">
+                                    <br>
+                                    <div class="text-center animate-box">
+                                        <p><a class="btn btn-primary btn-lg btn-learn" onclick="calcularNeto()">Calcular</a></p>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6  col-xs-12">
+                                    <br>
+                                    <div class="text-center animate-box">
+                                        <p><a style="background-color: #21485A" class="btn btn-primary btn-lg btn-learn" onclick="limpiar()">Limpiar</a></p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Mitad derecha (resultados) -->
+                    <div class="col-md-6 text-center ">
+                        <div class="row filaResultados">
+                            <div class="col-md-6 text-center ocultarEnDesktop">
+                                <h3 class="tituloResultadosMovil">Resultados</h3>
+                                <!-- <h3 style="color: #AFAFAF;">Resultados</h3> -->
+                            </div>
+
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 2.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo">Días negociados:</div>
+                                        <div class="simuladorsub">Días calendario entre la fecha de negociación y la fecha de vencimiento.</div>
+
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center ">
+                                        <input type="text" id="diasNegociados" disabled="true">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 1.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo">Valor del descuento:</div>
+                                        <div class="simuladorsub">Incluye gastos de desembolso</div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center ">
+                                        <input type="text" id="valorDescuento" disabled="true">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center ">
+                                <div class="row filaSimulador">
+                                    <div class="col-md-1 col-xs-2 text-center ">
+                                        <span class="icon"><img src="images\IconosSimulador\Asset 5.png"></span>
+                                    </div>
+                                    <div class="col-md-7 col-xl-6 col-xs-10">
+                                        <div class="simuladorTitulo">Valor neto a recibir:</div>
+                                        <div class="simuladorsub"></div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-5 col-xs-12 text-center ">
+                                        <input type="text" id="arecibir" disabled="true">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="colorlib-footer" role="contentinfo">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-3 colorlib-widget">
+                        <h4>Preguntas frecuentes</h4>
+                        <ul class="colorlib-footer-links">
+                            <li><a href="vinculacion.html">¿Cómo vincularme?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Contacto</h4>
+                        <ul class="colorlib-footer-links">
+                            <li>
+                                <a href="https://wa.me/573187161655?text=Hola.%20Me%20gustaría%20saber%20más%20sobre%20eFactoring" target="_blank"><img src="images/001-whatsapp.svg" height="16px" style="display:inline-block;">&nbsp;Whatsapp</a>
+                            </li>
+                            <li>
+                                <a href="https://goo.gl/maps/x6AiB2Fh87ek1o526" target="_blank"><img src="images/002-pin.svg" height="16px" style="display:inline-block;">&nbsp;Calle 70 #7-60 Of. 401</a>
+                            </li>
+                            <li>
+                                <a href="tel:573187161655" target="_blank"><img src="images/003-smartphone.svg" height="16px" style="display:inline-block;">&nbsp;(57) 318 7161655</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Redes sociales</h4>
+                        <ul class="colorlib-footer-links">
+                            <li><i class="icon-linkedin" style="color: #d7b373;"></i><a href="https://www.linkedin.com/company/efactoring"> efactoring</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Información legal</h4>
+                        <ul class="colorlib-footer-links">
+                            <li><a href="docs/TratamientoDeDatos.pdf">Política de tratamiento de datos</a></li>
+                            <li><a href="docs/ManejoInformación.pdf">Política de manejo de la información</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">&copy; 2020 eFactoring. Todos los derechos reservados</small>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    <script>
+        const undia = 1000 * 60 * 60 * 24;
+
+        function calcularNeto() {
+
+
+            let valornetoFactura = $("[name='valorneto']").val().replace("$", "").replace(/\./g, "").replace(",", ".");
+            let fechaNegociacion = new Date($("[name='fechaNegociacion']").val());
+            let fechaVencimiento = new Date($("[name='fechaVencimiento']").val());
+            let tasanominal = $("#tasanominal").val() / 100;
+            let gastosDesembolso = $("#gastosDesembolso").val();
+
+            if (valornetoFactura == "") {
+                alert("El valor neto a pagar debe ser mayor a $0")
+                return;
+            }
+
+            let diasNegociados = Math.round(Math.abs((fechaNegociacion - fechaVencimiento) / undia))
+
+            let tasaMVaEA = Math.pow((1 + tasanominal), 12) - 1
+
+            let tasaEAaDV = Math.pow((1 + tasaMVaEA), (1 / 365)) - 1
+
+            console.log("valornetoFactura : " + valornetoFactura);
+            console.log("diasNegociados : " + diasNegociados);
+            console.log("tasaMVaEA : " + tasaMVaEA);
+            console.log("tasaEAaDV : " + tasaEAaDV);
+
+            let valorPresente = pv(tasaEAaDV, diasNegociados, 0, valornetoFactura) * -1;
+            let valorNetoAPagar = valorPresente - gastosDesembolso;
+            // let valorNetoAPagar= pv(tasaEAaDV,diasNegociados,0,valornetoFactura); 
+            console.log("valorPresente : " + valorPresente);
+            console.log("valorNetoAPagar : " + valorNetoAPagar);
+            console.log("gastosDesembolso : " + gastosDesembolso);
+            $("#diasNegociados").val(diasNegociados);
+            $("#valorDescuento").val("$" + formatearCeros(valornetoFactura - valorNetoAPagar));
+            $("#valorDesembolso").val("$" + formatearCeros(valorPresente));
+            $("#arecibir").val("$" + formatearCeros(valorNetoAPagar));
+        }
+
+
+        // Parameters are rate, total number of periods, payment made each period and future value
+        function pv(rate, nper, pmt, fv) {
+            rate = parseFloat(rate);
+            nper = parseFloat(nper);
+            pmt = parseFloat(pmt);
+            fv = parseFloat(fv);
+            if (nper == 0) {
+                alert("La fecha de Vencimiento debe al menos un día mayor al la fecha de negociación ");
+                return (0);
+            }
+            if (rate == 0) { // Interest rate is 0
+                pv_value = -(fv + (pmt * nper));
+            } else {
+                x = Math.pow(1 + rate, -nper);
+                y = Math.pow(1 + rate, nper);
+                pv_value = -(x * (fv * rate - pmt + y * pmt)) / rate;
+            }
+            pv_value = conv_number(pv_value, 2);
+            return (pv_value);
+        }
+
+        // This function is from David Goodman's Javascript Bible.
+        function conv_number(expr, decplaces) {
+            var str = "" + Math.round(eval(expr) * Math.pow(10, decplaces));
+            while (str.length <= decplaces) {
+                str = "0" + str;
+            }
+
+            var decpoint = str.length - decplaces;
+            return (str.substring(0, decpoint) + "." + str.substring(decpoint, str.length));
+        }
+
+
+
+
+        // Devulve a cero el campo de valor neto Factura y los de fecha
+        function limpiar() {
+            $("[name='valorneto']").val("");
+            iniciarFechas();
+            //  new Date($("[name='fechaNegociacion']").val("2020-01-01"));
+            //  new Date($("[name='fechaVencimiento']").val("2020-01-01"));
+            $("#tasanominal").val("1.95");
+            $("#gastosDesembolso").val(250000);
+        }
+
+
+        //formatea un número como moneda
+        function formatearCeros(amount) {
+            var dollars = Math.floor(amount).toString().split('');
+            var cents = (Math.round((amount % 1) * 100) / 100).toString().split('.')[1];
+            if (typeof cents == 'undefined') {
+                cents = '00';
+            } else if (cents.length == 1) {
+                cents = cents + '0';
+            }
+            var str = '';
+            for (var i = dollars.length - 1; i >= 0; i--) {
+                str += dollars.splice(0, 1);
+                if (i % 3 == 0 && i != 0) str += '.';
+            }
+            return str;
+
+        }
+        //-------------pone el valor inical del slider negociacion como hoy y el de vencimiento en  60 días
+
+
+
+
+        function iniciarFechas() {
+            console.log("onload")
+            var hoy = new Date();
+            var yyyymmdd = new Date(hoy.getTime() - (hoy.getTimezoneOffset() * 60000))
+                .toISOString()
+                .split("T")[0];
+
+            $("[name='fechaNegociacion']").val(yyyymmdd);
+
+            var dias60 = new Date(hoy.getTime() - (hoy.getTimezoneOffset() * 60000) + 60 * 24 * 3600 * 1000)
+                .toISOString()
+                .split("T")[0];
+
+            $("[name='fechaVencimiento']").val(dias60)
+        }
+
+        window.onload = iniciarFechas;
+
+        // ----para los sliders, que se muestre el número encima cuando se arraste----
+        //no estan dentro de ningun metodo (ni onload ni .ready) pq entonces no se muestran al cargar la página
+        {
+
+            // slider 1
+            const
+                range = document.getElementById('tasanominal'),
+                rangeV = document.getElementById('rangeVTasanominal'),
+                setValue = () => {
+                    let
+                        newValue = Number((range.value - range.min) * 100 / (range.max - range.min)),
+                        newPosition = 10 - (newValue * 0.2)
+                    valorSlider = Number(range.value).toFixed(3);
+                    rangeV.innerHTML = `<span>${valorSlider}%</span>`;
+                    rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+                };
+            document.addEventListener("DOMContentLoaded", setValue);
+            range.addEventListener('input', setValue);
+
+
+            //slider 2
+
+            const
+                range2 = document.getElementById('gastosDesembolso'),
+                rangeV2 = document.getElementById('rangeVGastosDesembolso'),
+                setValue2 = () => {
+                    let
+                        newValue = Number((range2.value - range2.min) * 100 / (range2.max - range2.min)),
+                        newPosition = 10 - (newValue * 0.2);
+                    rangeV2.innerHTML = `<span>$${formatearCeros(range2.value)}</span>`;
+                    rangeV2.style.left = `calc(${newValue}% + (${newPosition}px))`;
+                };
+            document.addEventListener("DOMContentLoaded", setValue2);
+            range2.addEventListener('input', setValue2);
+
+        }
+
+        //------para que el campo de valor neto se formatee como moneda-----
+
+        // Jquery Dependency
+
+        $("input[data-type='currency']").on({
+            keyup: function() {
+                formatCurrency($(this));
+            },
+            blur: function() {
+                formatCurrency($(this), "blur");
+            }
+        });
+
+
+        function formatNumber(n) {
+            // format number 1000000 to 1,234,567
+            return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+        }
+
+
+        function formatCurrency(input, blur) {
+            // appends $ to value, validates decimal side
+            // and puts cursor back in right position.
+
+            // get input value
+            var input_val = input.val();
+
+            // don't validate empty input
+            if (input_val === "") {
+                return;
+            }
+
+            // original length
+            var original_len = input_val.length;
+
+            // initial caret position 
+            var caret_pos = input.prop("selectionStart");
+
+            // check for decimal
+            if (input_val.indexOf(",") >= 0) {
+
+                // get position of first decimal
+                // this prevents multiple decimals from
+                // being entered
+                var decimal_pos = input_val.indexOf(",");
+
+                // split number by decimal point
+                var left_side = input_val.substring(0, decimal_pos);
+                var right_side = input_val.substring(decimal_pos);
+
+                // add commas to left side of number
+                left_side = formatNumber(left_side);
+
+                // validate right side
+                right_side = formatNumber(right_side);
+
+                // On blur make sure 2 numbers after decimal
+                if (blur === "blur") {
+                    right_side += "00";
+                }
+
+                // Limit decimal to only 2 digits
+                right_side = right_side.substring(0, 2);
+
+                // join number by .
+                input_val = "$" + left_side + "," + right_side;
+
+            } else {
+                // no decimal entered
+                // add commas to number
+                // remove all non-digits
+                input_val = formatNumber(input_val);
+                input_val = "$" + input_val;
+
+                // final formatting
+                if (blur === "blur") {
+                    input_val += ",00";
+                }
+            }
+
+            // send updated string to input
+            input.val(input_val);
+
+            // put caret back in the right position
+            var updated_len = input_val.length;
+            caret_pos = updated_len - original_len + caret_pos;
+            input[0].setSelectionRange(caret_pos, caret_pos);
+        }
+    </script>
+</body>
+
 </html>
-
